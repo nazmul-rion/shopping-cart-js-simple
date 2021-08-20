@@ -3,6 +3,7 @@ const removeItems = document.getElementsByClassName('remove-item');
 for (const item of removeItems) {
     item.addEventListener('click', function (event) {
         event.target.parentElement.parentElement.parentElement.remove();
+        updateTotal();
     })
 }
 
